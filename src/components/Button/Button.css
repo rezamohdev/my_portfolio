@@ -17,8 +17,14 @@
   line-height: normal;
   cursor: pointer;
   transition: 230ms ease-out;
+  border: 1px solid #07f;
 }
 .rounded-button:hover {
+  box-shadow: 1px 4px 12px 0px #0000002b;
+}
+
+.button_type_light {
+  border: 1px solid #07f;
   background: #fff;
   color: #07f;
 }

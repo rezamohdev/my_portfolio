@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button >Hello</Button>
+        <Button lightButton={true}>Hello</Button>
         <Button >Eol</Button>
       </header>
     </div>
