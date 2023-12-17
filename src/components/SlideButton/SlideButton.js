@@ -1,6 +1,14 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactDOM from 'react-dom'
 import './SlideButton.css';
-const SlideButton = ({ name }) => {
-    return (<button className='slider-button'><FontAwesomeIcon size='xl' icon="coffee" /></button>)
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faArrowLeft, faArrowRight, faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab, faCheckSquare, faCoffee)
+const SlideButton = ({ right = false, active = true }) => {
+    return (<button className={`slider-button ${active && 'slider-button_type_active'} `}>
+        {right ? (<FontAwesomeIcon color='#fff' size='xl' icon={faArrowRight} />) : (<FontAwesomeIcon size='xl' icon={faArrowLeft} />)}
+    </button>)
 }
 export default SlideButton;

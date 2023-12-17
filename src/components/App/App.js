@@ -10,6 +10,7 @@ function App() {
         <Button lightButton={true}>	&#8592;	</Button>
         <Button lightButton={true}>	&#8594;</Button>
         <SlideButton />
+        <SlideButton active={false} right={false} />
         <Button >Eol</Button>
       </header>
     </div>
