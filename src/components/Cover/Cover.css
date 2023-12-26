@@ -1,0 +1,31 @@
+.cover {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 100px 81px;
+  justify-content: center;
+}
+.cover__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 50px;
+  gap: 10px;
+}
+.cover__title {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.cover__photo {
+  padding: 0;
+  margin: 0;
+  width: 450px;
+}
+.cover__buttons {
+  display: flex;
+  gap: 44px;
+  padding: 0;
+  margin: 0;
+}
