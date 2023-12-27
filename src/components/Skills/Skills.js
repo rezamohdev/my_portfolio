@@ -16,8 +16,8 @@ const Skills = () => {
             <p className='skills__paragraph'>
                 Hello there! I'm Robert Junior. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With 20 years of experience as a professional graphic designer  </p>
             <div className='skills__buttons'>
-                <a href='https://www.linkedin.com/in/rmoh22/' target='_blank'><Button lightButton={true}>Main Skills</Button></a>
-                <Button >Education <FontAwesomeIcon icon={faPen} /></Button   >
+                <Button lightButton={true}>Main Skills</Button>
+                <Button >Education </Button   >
             </div>
         </div>
         <img src={skillsPhotoSrc} className='skills__photo' />
