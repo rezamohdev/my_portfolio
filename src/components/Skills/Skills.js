@@ -15,7 +15,7 @@ const Skills = () => {
                 of Web Development
             </h1>
             <p className='skills__paragraph'>
-                Hello there! I'm Robert Junior. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With 20 years of experience as a professional graphic designer  </p>
+                Hello there! I'm <b>Reza Mohammadi</b>. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With<b> 4 Years</b> of experience as a Web Developer </p>
             <div className='skills__buttons'>
                 <TabGroup />
             </div>
