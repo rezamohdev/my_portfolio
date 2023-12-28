@@ -3,6 +3,7 @@ import { faArrowDown, faPen, faSchool } from '@fortawesome/free-solid-svg-icons'
 import "./Skills.css";
 import Button from "../Button/Button";
 import skillsPhotoSrc from '../../images/MyPhoto.png';
+import TabGroup from '../TabGroup/TabGroup';
 
 const Skills = () => {
     return (<div className="skills">
@@ -16,8 +17,7 @@ const Skills = () => {
             <p className='skills__paragraph'>
                 Hello there! I'm Robert Junior. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With 20 years of experience as a professional graphic designer  </p>
             <div className='skills__buttons'>
-                <Button lightButton={true}>Main Skills</Button>
-                <Button >Education </Button   >
+                <TabGroup />
             </div>
         </div>
         <img src={skillsPhotoSrc} className='skills__photo' />
