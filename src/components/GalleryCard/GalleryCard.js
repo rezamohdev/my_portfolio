@@ -1,10 +1,9 @@
 import "./GalleryCard.css";
-import CardImage from '../../images/preview2.png';
 
-const GalleryCard = () => {
+const GalleryCard = ({ CardImage, Title }) => {
     return (<div className="gallery-card">
         <img className="gallery-card__image" src={CardImage} />
-        <span className="gallery-card__caption">My Project | Portfolio</span>
+        <span className="gallery-card__caption">{Title}</span>
     </div>)
 }
 export default GalleryCard;

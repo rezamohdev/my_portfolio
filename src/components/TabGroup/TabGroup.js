@@ -35,7 +35,10 @@ const TabGroup = () => {
                         <ProgressBar>Interaction Design - Animation </ProgressBar>
                     </>
                 ) : (
-                    <p>Education</p>
+                    <>
+                        <ProgressBar>Major: Computer Science, Software Engineering</ProgressBar>
+                        <ProgressBar>TripleTen (Practicum) Bootcamp: Software Engineering course</ProgressBar>
+                    </>
                 )
             }
         </div>

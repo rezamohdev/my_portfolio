@@ -1,0 +1,33 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__span {
+  color: #0078ff;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.gallery__title {
+  width: 684px;
+  color: #222;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+}
+.gallery__cards {
+  margin-top: 50px;
+  padding: 0 81px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
