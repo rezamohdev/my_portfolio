@@ -8,6 +8,7 @@ import Cover from '../Cover/Cover';
 import Skills from '../Skills/Skills';
 import CardSlider from '../CardSlider/CardSlider';
 import Gallery from '../Gallery/Gallery';
+import Footer from '../Footer/Footer';
 
 function App() {
   const sliderClick = (slider) => {
@@ -29,6 +30,7 @@ function App() {
       <Skills />
       {/* <CardSlider slides={slides} /> */}
       <Gallery />
+      <Footer />
     </div>
   );
 }
