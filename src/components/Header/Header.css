@@ -49,16 +49,31 @@
   color: #fff;
 }
 .nav__buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 }
+.nav__buttons-list {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+.nav__list-item {
+  margin-top: 5px;
+  padding: 2.5px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+.nav__list-item:hover {
+  background-color: rgba(128, 128, 128, 0.581);
+}
+
 .nav__top {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 600px) {
+  .header__links {
+    flex-direction: column;
+    background-color: red;
+  }
   .nav__button {
-    /* background-color: red; */
   }
 }
