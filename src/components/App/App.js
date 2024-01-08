@@ -28,7 +28,6 @@ function App() {
       <Header />
       <Cover />
       <Skills />
-      {/* <CardSlider slides={slides} /> */}
       <Gallery />
       <Footer />
     </div>

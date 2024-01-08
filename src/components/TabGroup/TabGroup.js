@@ -11,7 +11,6 @@ const TabGroup = () => {
         <div className="tab__group">
 
             <Button
-                key={"skills"}
                 active={active === "skills"}
                 onClick={() => setActive("skills")}
                 lightButton={active == "skills" ? false : true}
@@ -20,7 +19,6 @@ const TabGroup = () => {
             </Button>
             <Button
                 lightButton={active == "skills" ? true : false}
-                key={"skills"}
                 onClick={() => setActive("education")}
             >
                 Education

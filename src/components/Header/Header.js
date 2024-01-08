@@ -11,12 +11,12 @@ const Header = () => {
     return (<>
         {isMobile ?
             <div className="nav">
-                <dic className="nav__top">
+                <div className="nav__top">
                     <span className="header__logo"><span style={{ fontSize: 25 }}>💻</span><b>Reza Mohammadi</b></span>
                     <button className="nav__menu-button">
                         <FontAwesomeIcon icon={faBars} />
                     </button>
-                </dic>
+                </div>
 
                 {/* <div className="nav__buttons"> */}
                 <ul className="nav__buttons-list">

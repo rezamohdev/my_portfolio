@@ -18,12 +18,10 @@ const Gallery = () => {
         </h2>
         <div className="gallery__cards">
             {Images.map((image, index) => (
-                <>
-                    <a href={image.link} target="_blank">
-                        <GalleryCard key={index} CardImage={image.image} Title={image.title} />
+                <a key={index} href={image.link} target="_blank">
+                    <GalleryCard CardImage={image.image} Title={image.title} />
 
-                    </a>
-                </>
+                </a>
             ))}
         </div>
     </div>)
