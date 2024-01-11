@@ -24,6 +24,7 @@ const Header = () => {
                     <li className="nav__list-item"><a className="nav__link">About Me</a></li>
                     <li className="nav__list-item"><a className="nav__link">Contact me</a></li>
                 </ul>
+                <a href="mailto:rezamoh847@gmail.com" ><Button>Let's chat</Button></a>
                 {/* </div> */}
             </div>
             :
