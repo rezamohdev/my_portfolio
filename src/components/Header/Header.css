@@ -34,6 +34,13 @@
   width: 100%;
   padding: 8px 10px;
 }
+.nav__menu {
+  /* padding: 0 1px; */
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
 .nav__menu-button {
   width: 35px;
   height: 35px;
@@ -53,7 +60,7 @@
 .nav__buttons-list {
   list-style: none;
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
 }
 .nav__list-item {
   margin-top: 5px;

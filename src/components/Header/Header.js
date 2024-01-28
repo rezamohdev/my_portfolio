@@ -8,23 +8,32 @@ import { useMediaQuery } from 'react-responsive';
 const Header = () => {
     const [showNavbar, isShowNavbar] = useState(false);
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setIsOpen(!isOpen);
+    }
     return (<>
         {isMobile ?
             <div className="nav">
                 <div className="nav__top">
                     <span className="header__logo"><span style={{ fontSize: 25 }}>💻</span><b>Reza Mohammadi</b></span>
-                    <button className="nav__menu-button">
+                    <button className="nav__menu-button" onClick={handleMenuClick}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
                 </div>
 
                 {/* <div className="nav__buttons"> */}
-                <ul className="nav__buttons-list">
-                    <li className="nav__list-item"><a className="nav__link">Home</a></li>
-                    <li className="nav__list-item"><a className="nav__link">About Me</a></li>
-                    <li className="nav__list-item"><a className="nav__link">Contact me</a></li>
-                </ul>
-                <a href="mailto:rezamoh847@gmail.com" ><Button>Let's chat</Button></a>
+                {isOpen && (
+                    <div className="nav__menu">
+                        <ul className="nav__buttons-list">
+                            <li className="nav__list-item"><a className="nav__link">Home</a></li>
+                            <li className="nav__list-item"><a className="nav__link">About Me</a></li>
+                            <li className="nav__list-item"><a className="nav__link">Contact me</a></li>
+                        </ul>
+                        <a href="mailto:rezamoh847@gmail.com" style={{ marginLeft: 10 }}><Button>Let's chat</Button></a>
+                    </div>
+                )}
                 {/* </div> */}
             </div>
             :
