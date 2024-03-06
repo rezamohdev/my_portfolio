@@ -24,7 +24,7 @@ const TabGroup = () => {
                 Education
             </Button>
         </div>
-        <div className="tab__contents">
+        <div className="tab__content">
             {
                 active == "skills" ? (
                     <>

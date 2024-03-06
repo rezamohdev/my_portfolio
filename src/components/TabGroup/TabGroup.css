@@ -9,3 +9,11 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #047;
 }
+@media screen and (max-width: 600px) {
+  .tab__group {
+    justify-content: center;
+  }
+  .tab__content {
+    padding: 10px;
+  }
+}
