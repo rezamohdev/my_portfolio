@@ -48,7 +48,8 @@
     margin-bottom: 50px;
   }
   .skills__photo {
-    width: 300px;
+    width: 300px !important;
+    height: 300px !important;
     padding: 0;
   }
   .skills__info {

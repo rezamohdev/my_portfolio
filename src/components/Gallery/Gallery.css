@@ -36,7 +36,7 @@
     width: 370px;
   }
   .gallery__cards {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0;
+    justify-content: center;
   }
 }
