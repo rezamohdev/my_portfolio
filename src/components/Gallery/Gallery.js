@@ -20,7 +20,6 @@ const Gallery = () => {
             {Images.map((image, index) => (
                 <a key={index} href={image.link} target="_blank">
                     <GalleryCard CardImage={image.image} Title={image.title} />
-
                 </a>
             ))}
         </div>

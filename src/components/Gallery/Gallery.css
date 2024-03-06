@@ -31,3 +31,12 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 600px) {
+  .gallery__title {
+    width: 370px;
+  }
+  .gallery__cards {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
