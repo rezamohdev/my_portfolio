@@ -18,11 +18,11 @@ const Cover = () => {
                 Collaborating with highly skilled individuals, our agency delivers top-quality services.
             </p>
             <div className='cover__buttons'>
-                <a href='https://www.linkedin.com/in/rmoh22/' target='_blank'><Button lightButton={true}>Hire Me!</Button></a>
+                <a href='https://www.linkedin.com/in/rmoh22/' target='_blank' rel='noreferrer'><Button lightButton={true}>Hire Me!</Button></a>
                 <Button >Download My CV <FontAwesomeIcon icon={faArrowDown} /></Button   >
             </div>
         </div>
-        <img src={CoverPhotoSrc} className='cover__photo' />
+        <img src={CoverPhotoSrc} className='cover__photo' alt='cover photo' />
     </div>)
 }
 
