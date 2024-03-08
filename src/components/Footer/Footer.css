@@ -66,3 +66,5 @@
   left: -85px;
   bottom: -85px;
 }
+@media screen and (max-width: 600px) {
+}
