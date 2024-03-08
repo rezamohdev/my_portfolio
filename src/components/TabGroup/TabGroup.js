@@ -13,12 +13,12 @@ const TabGroup = () => {
             <Button
                 active={active === "skills"}
                 onClick={() => setActive("skills")}
-                lightButton={active == "skills" ? false : true}
+                lightButton={active === "skills" ? false : true}
             >
                 Skills
             </Button>
             <Button
-                lightButton={active == "skills" ? true : false}
+                lightButton={active === "skills" ? true : false}
                 onClick={() => setActive("education")}
             >
                 Education
@@ -26,7 +26,7 @@ const TabGroup = () => {
         </div>
         <div className="tab__content">
             {
-                active == "skills" ? (
+                active === "skills" ? (
                     <>
                         <ProgressBar>User Experience Design - UI/UX</ProgressBar>
                         <ProgressBar>Web & User Interface Design - Development</ProgressBar>

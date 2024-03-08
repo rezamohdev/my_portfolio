@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Footer.css";
-import { faLinkedin, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faEnvelopeCircleCheck, faEnvelopeSquare, faEnvelopesBulk, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
     return (<footer className="footer">
         <h6 className="footer__title">Contact me</h6>

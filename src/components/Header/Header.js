@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
-    const [showNavbar, isShowNavbar] = useState(false);
+    // const [showNavbar, isShowNavbar] = useState(false);
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
     const [isOpen, setIsOpen] = useState(false);
 
@@ -40,9 +40,9 @@ const Header = () => {
             <header className="header">
                 <span className="header__logo"><span style={{ fontSize: 25 }}>💻</span><b>Reza Mohammadi</b></span>
                 <div className="header__links">
-                    <a className="header__link">Home</a>
-                    <a className="header__link">About Me</a>
-                    <a className="header__link">Contact me</a>
+                    <a className="header__link" href="#">Home</a>
+                    <a className="header__link" href="#">About Me</a>
+                    <a className="header__link" href="#">Contact me</a>
                 </div>
                 <a href="mailto:rezamoh847@gmail.com" ><Button>Let's chat</Button></a>
             </header>

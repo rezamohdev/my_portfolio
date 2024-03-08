@@ -1,7 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown, faPen, faSchool } from '@fortawesome/free-solid-svg-icons'
 import "./Skills.css";
-import Button from "../Button/Button";
 import skillsPhotoSrc from '../../images/MyPhoto.png';
 import TabGroup from '../TabGroup/TabGroup';
 
