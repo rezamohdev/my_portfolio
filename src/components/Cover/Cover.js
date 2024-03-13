@@ -22,7 +22,7 @@ const Cover = () => {
                 <Button >Download My CV <FontAwesomeIcon icon={faArrowDown} /></Button   >
             </div>
         </div>
-        <img src={CoverPhotoSrc} className='cover__photo' alt='cover photo' />
+        <img src={CoverPhotoSrc} className='cover__photo' alt='cover' />
     </div>)
 }
 

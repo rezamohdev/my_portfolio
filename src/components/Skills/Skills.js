@@ -17,7 +17,7 @@ const Skills = () => {
                 <TabGroup />
             </div>
         </div>
-        <img src={skillsPhotoSrc} className='skills__photo' alt="skills photo" />
+        <img src={skillsPhotoSrc} className='skills__photo' alt="skills" />
     </div>)
 }
 
