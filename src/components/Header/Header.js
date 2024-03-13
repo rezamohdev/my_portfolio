@@ -39,11 +39,17 @@ const Header = () => {
             :
             <header className="header">
                 <span className="header__logo"><span style={{ fontSize: 25 }}>💻</span><b>Reza Mohammadi</b></span>
-                <div className="header__links">
-                    <a className="header__link" href="#">Home</a>
-                    <a className="header__link" href="#">About Me</a>
-                    <a className="header__link" href="#">Contact me</a>
-                </div>
+                <ul className="header__links">
+                    <li>
+                        <Link className="header__link" href="#">Home</Link>
+                    </li>
+                    <li>
+                        <a className="header__link" href="#">About Me</a>
+                    </li>
+                    <li>
+                        <a className="header__link" href="#">Contact me</a>
+                    </li>
+                </ul>
                 <a href="mailto:rezamoh847@gmail.com" ><Button>Let's chat</Button></a>
             </header>
         }
