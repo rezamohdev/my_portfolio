@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import Button from '../Button/Button';
+import Button from '../RoundButton/RoundButton';
 import './Cover.css';
 import CoverPhotoSrc from '../../images/MyPhoto.png';
 const Cover = () => {

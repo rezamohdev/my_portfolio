@@ -1,5 +1,6 @@
-import { useState } from "react";
-import Button from "../Button/Button";
+import React, { useState,useEffect } from "react";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleMenuClick = () => {
+        
         setIsOpen(!isOpen);
     }
     return (<>
@@ -44,13 +46,13 @@ const Header = () => {
                         <Link className="header__link" href="#">Home</Link>
                     </li>
                     <li>
-                        <a className="header__link" href="#">About Me</a>
+                        <Link className="header__link" href="#">About Me</Link>
                     </li>
                     <li>
-                        <a className="header__link" href="#">Contact me</a>
+                        <Link className="header__link" href="#">Contact me</Link>
                     </li>
                 </ul>
-                <a href="mailto:rezamoh847@gmail.com" ><Button>Let's chat</Button></a>
+                <a href="mailto:rezamoh847@gmail.com" ><RoundButton>Let's chat</RoundButton></a>
             </header>
         }
     </>)

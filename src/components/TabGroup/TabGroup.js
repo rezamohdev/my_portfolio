@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TabGroup.css";
-import Button from "../Button/Button";
+import Button from "../RoundButton/RoundButton";
 import ProgressBar from "../ProgressBar/ProgressBar";
 
 
