@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { Link, Button, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, Button, Events,  scrollSpy } from 'react-scroll';
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
