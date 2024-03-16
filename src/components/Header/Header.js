@@ -70,9 +70,9 @@ const Header = () => {
                 {isOpen && (
                     <div className="nav__menu">
                         <ul className="nav__buttons-list">
-                            <li className="nav__list-item"><a className="nav__link" href="#">Home</a></li>
-                            <li className="nav__list-item"><a className="nav__link" href="#">About Me</a></li>
-                            <li className="nav__list-item"><a className="nav__link" href="#">Contact me</a></li>
+                            <li className="nav__list-item"><Link className="nav__link" href="#">Home</Link></li>
+                            <li className="nav__list-item"><Link className="nav__link" href="#">About Me</Link></li>
+                            <li className="nav__list-item"><Link className="nav__link" href="#">Contact me</Link></li>
                         </ul>
                         <a href="mailto:rezamoh847@gmail.com" style={{ marginLeft: 10 }}><Button>Let's chat</Button></a>
                     </div>
