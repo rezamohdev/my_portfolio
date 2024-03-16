@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, Button, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,22 +30,7 @@ const Header = () => {
           };
         }, []);
       
-        // Defining functions to perform different types of scrolling.
-        const scrollToTop = () => {
-          scroll.scrollToTop();
-        };
-      
-        const scrollToBottom = () => {
-          scroll.scrollToBottom();
-        };
-      
-        const scrollTo = () => {
-          scroll.scrollTo(100); // Scrolling to 100px from the top of the page.
-        };
-      
-        const scrollMore = () => {
-          scroll.scrollMore(100); // Scrolling an additional 100px from the current scroll position.
-        };
+       
       
         // Function to handle the activation of a link.
         const handleSetActive = (to) => {
@@ -60,7 +45,8 @@ const Header = () => {
         {isMobile ?
             <div className="nav">
                 <div className="nav__top">
-                    <span className="header__logo"><span style={{ fontSize: 25 }}>💻</span><b>Reza Mohammadi</b></span>
+                    <span className="header__logo">
+                        <span style={{ fontSize: 25 }}>💻    </span><b> Reza Mohammadi</b></span>
                     <button className="nav__menu-button" onClick={handleMenuClick}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
@@ -74,7 +60,7 @@ const Header = () => {
                             <li className="nav__list-item"><Link className="nav__link" href="#">About Me</Link></li>
                             <li className="nav__list-item"><Link className="nav__link" href="#">Contact me</Link></li>
                         </ul>
-                        <a href="mailto:rezamoh847@gmail.com" style={{ marginLeft: 10 }}><Button>Let's chat</Button></a>
+                        <a href="mailto:mailto:rezamohamadi463@yahoo.com" style={{ marginLeft: 10 }}><Button>Let's chat</Button></a>
                     </div>
                 )}
                 {/* </div> */}
@@ -99,17 +85,8 @@ const Header = () => {
                         <Link className="header__link" href="#">Contact me</Link>
                     </li>
                 </ul>
-                <a href="mailto:rezamoh847@gmail.com" ><RoundButton>Let's chat</RoundButton></a>
-                <button onClick={scrollToTop} >To the top!</button>
-    <br/>
-    <button onClick={scrollToBottom}>To the bottom!</button>
-    <br/>
-    <button onClick={scrollTo}>Scroll to 100px from the top</button>
-    <br/>
-    <button onClick={scrollMore}>Scroll 100px more from the current position!</button>
-                    <Element name="test1" className="element">
-      test 1
-    </Element>
+                <a href="mailto:mailto:rezamohamadi463@yahoo.com" ><RoundButton>Let's chat</RoundButton></a>
+                
 
             </header>
         }
