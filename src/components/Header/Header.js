@@ -100,13 +100,13 @@ const Header = () => {
                     </li>
                 </ul>
                 <a href="mailto:rezamoh847@gmail.com" ><RoundButton>Let's chat</RoundButton></a>
-                <a onClick={scrollToTop} href="#">To the top!</a>
+                <button onClick={scrollToTop} >To the top!</button>
     <br/>
-    <a onClick={scrollToBottom} href="#">To the bottom!</a>
+    <button onClick={scrollToBottom}>To the bottom!</button>
     <br/>
-    <a onClick={scrollTo} href="#">Scroll to 100px from the top</a>
+    <button onClick={scrollTo}>Scroll to 100px from the top</button>
     <br/>
-    <a onClick={scrollMore} href="#">Scroll 100px more from the current position!</a>
+    <button onClick={scrollMore}>Scroll 100px more from the current position!</button>
                     <Element name="test1" className="element">
       test 1
     </Element>
