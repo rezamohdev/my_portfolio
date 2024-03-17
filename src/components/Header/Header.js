@@ -79,7 +79,18 @@ const Header = () => {
       onSetActive={handleSetActive} className="header__link" href="#">Home</Link>
                     </li>
                     <li>
-                        <Link className="header__link" href="#">About Me</Link>
+                        <Link  
+                        
+                        to="test1" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={400} 
+                        duration={500} 
+      onSetActive={handleSetActive} 
+                        className="header__link" href="#aboutme">About Me</Link>
+                    </li>
+                    <li>
+                        <Link className="header__link" href="#">Gallery</Link>
                     </li>
                     <li>
                         <Link className="header__link" href="#">Contact me</Link>

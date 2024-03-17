@@ -3,7 +3,7 @@ import "./Footer.css";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
-    return (<footer className="footer">
+    return (<footer className="footer" id="footer">
         <h6 className="footer__title">Contact me</h6>
         <div className="footer__links">
             <a href="https://www.linkedin.com/in/rmoh22/" target="_blank" rel='noreferrer' className="footer__link"><FontAwesomeIcon icon={faLinkedinIn} /></a>

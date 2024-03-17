@@ -4,7 +4,7 @@ import Button from '../RoundButton/RoundButton';
 import './Cover.css';
 import CoverPhotoSrc from '../../images/MyPhoto.png';
 const Cover = () => {
-    return (<div className='cover'>
+    return (<div className='cover' id='cover'>
         <div className='cover__info'>
             <span className='cover__welcome'>Welcome to my Portfolio</span>
             <h1 className='cover__title'>

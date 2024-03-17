@@ -3,7 +3,7 @@ import skillsPhotoSrc from '../../images/MyPhoto.png';
 import TabGroup from '../TabGroup/TabGroup';
 
 const Skills = () => {
-    return (<div className="skills">
+    return (<div className="skills" id="skills">
         <div className='skills__info'>
             <span className='skills__welcome'>ABOUT ME</span>
             <h1 className='skills__title'>

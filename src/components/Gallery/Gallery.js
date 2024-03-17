@@ -12,7 +12,7 @@ const Gallery = () => {
         { image: Project1, title: "Project 1", link: "https://www.google.com/" },
         { image: Project1, title: "Project 1", link: "https://www.google.com/" },
     ];
-    return (<div className="gallery">
+    return (<div className="gallery" id="gallery">
         <span className="gallery__span">My Projects</span>
         <h2 className="gallery__title">
             Presenting My Design Portfolio and Case Studies
