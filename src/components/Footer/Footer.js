@@ -24,14 +24,6 @@ const Footer = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a
-          href="mailto:johndoe@yahoo.com"
-          target="_blank"
-          rel="noreferrer"
-          className="footer__link"
-        >
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
       </div>
       <span className="footer__circle_1"></span>
       <span className="footer__circle_2"></span>
