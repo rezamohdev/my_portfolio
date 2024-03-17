@@ -38,14 +38,16 @@
 /* nav */
 .nav {
   width: 100%;
-  padding: 8px 10px;
+  padding: 8px 0;
 }
 .nav__menu {
   /* padding: 0 1px; */
   width: 100%;
   position: absolute;
   top: 50px;
+  background-color: #ffffff7e;
   right: 0;
+  padding-bottom: 20px;
 }
 .nav__menu-button {
   width: 35px;
@@ -66,7 +68,7 @@
 .nav__buttons-list {
   list-style: none;
   text-decoration: none;
-  padding: 5px;   
+  padding: 5px;
 }
 .nav__link {
   list-style: none;
@@ -86,7 +88,33 @@
   display: flex;
   justify-content: space-between;
 }
+.header__top-button {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border: 1.4px solid #fff;
+  z-index: 1;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 19px;
+  transition: font-size all 350ms;
+}
+.header__top-button:hover {
+  font-size: 29px;
+  border-width: 3px;
+  padding-bottom: 25px;
+}
+.header__top-button_visible {
+  display: block;
+}
+.header__top-button_hidden {
+  display: none;
+}
 @media screen and (max-width: 600px) {
+  .header__top-button {
+    display: block;
+  }
   .header__links {
     flex-direction: column;
     background-color: red;

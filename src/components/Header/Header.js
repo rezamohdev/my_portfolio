@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, Button, Events, scrollSpy } from "react-scroll";
-import { Link as LinkRouter } from "react-router-dom";
+import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,10 +10,8 @@ const Header = () => {
   // const [showNavbar, isShowNavbar] = useState(false);
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   const [isOpen, setIsOpen] = useState(false);
-  const coverRef = useRef(null);
-
+  const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
-    //main ->
     // Registering the 'begin' event and logging it to the console when triggered.
     Events.scrollEvent.register("begin", (to, element) => {
       console.log("begin", to, element);
@@ -31,20 +28,25 @@ const Header = () => {
     };
   }, []);
 
-  // Function to handle the activation of a link.
-  const handleSetActive = (to) => {
-    console.log(to);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      setIsVisible(scrolled > 50); // Update visibility based on threshold
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleScrollToCover = () => {
-    if (coverRef.current) {
-      coverRef.current.scrollInToView({ behavior: "smooth" });
-    }
+  const scrollToTop = () => {
+    scroll.scrollToTop({ duration: 290 });
   };
+
   return (
     <>
       {isMobile ? (
@@ -64,17 +66,58 @@ const Header = () => {
             <div className="nav__menu">
               <ul className="nav__buttons-list">
                 <li className="nav__list-item">
-                  <Link className="nav__link" href="#">
+                  <Link
+                    activeClass="active"
+                    to="cover"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={300}
+                    className="header__link"
+                    href="#cover"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav__list-item">
-                  <Link className="nav__link" href="#">
+                  <Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={300}
+                    className="header__link"
+                    href="#skills"
+                  >
                     About Me
                   </Link>
                 </li>
                 <li className="nav__list-item">
-                  <Link className="nav__link" href="#">
+                  <Link
+                    activeClass="active"
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={300}
+                    className="header__link"
+                    href="#gallery"
+                  >
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={300}
+                    className="header__link"
+                    href="#footer"
+                  >
                     Contact me
                   </Link>
                 </li>
@@ -83,7 +126,7 @@ const Header = () => {
                 href="mailto:mailto:rezamohamadi463@yahoo.com"
                 style={{ marginLeft: 10 }}
               >
-                <Button>Let's chat</Button>
+                <RoundButton>Let's chat</RoundButton>
               </a>
             </div>
           )}
@@ -158,6 +201,15 @@ const Header = () => {
           </a>
         </header>
       )}
+
+      <RoundButton
+        className={`header__top-button ${
+          isVisible ? "header__top-button_visible" : "header__top-button_hidden"
+        }`}
+        onClick={scrollToTop}
+      >
+        &uarr;
+      </RoundButton>
     </>
   );
 };

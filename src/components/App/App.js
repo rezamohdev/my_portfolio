@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./App.css";
 import Header from "../Header/Header";
+import Main from "../Main/Main.js";
 import Cover from "../Cover/Cover";
 import Skills from "../Skills/Skills";
 import Gallery from "../Gallery/Gallery";
@@ -19,10 +20,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
-      <Cover />
-      <Skills />
-      <Gallery />
-      <Footer />
+      <Main />
     </div>
   );
 }
