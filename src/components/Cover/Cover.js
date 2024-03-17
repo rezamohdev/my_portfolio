@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Button from "../RoundButton/RoundButton";
 import "./Cover.css";
+import resumeDoc from "../../images/mycv/RezaResume.pdf";
 import CoverPhotoSrc from "../../images/MyPhoto.png";
-import { useRef } from "react";
 const Cover = ({ coverRef }) => {
   return (
     <div className="cover" ref={coverRef} id="cover">
@@ -28,9 +28,16 @@ const Cover = ({ coverRef }) => {
           >
             <Button lightButton={true}>Hire Me!</Button>
           </a>
-          <Button>
-            Download My CV <FontAwesomeIcon icon={faArrowDown} />
-          </Button>
+          <a
+            href={resumeDoc}
+            download={resumeDoc}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button>
+              Download My CV <FontAwesomeIcon icon={faArrowDown} />
+            </Button>
+          </a>
         </div>
       </div>
       <img src={CoverPhotoSrc} className="cover__photo" alt="cover" />
