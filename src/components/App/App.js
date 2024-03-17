@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main.js";
@@ -9,8 +8,6 @@ import Footer from "../Footer/Footer";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const coverRef = useRef(null);
-
   return (
     <div className="App">
       <Header />
