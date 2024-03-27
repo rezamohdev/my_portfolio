@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Reza Mohammadi's Portfolio
+
+## Proeject information
+
+This project was built with ReactJs for showcasing my projects and other projects that I've contributed.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Plans to improvment for project
+
+I have some plans to add more projects to this website and add more animations and update the look and feel overall
 
 ## Available Scripts
 
