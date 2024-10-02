@@ -5,6 +5,7 @@ import Project1 from "../../images/projects/aroundus.png";
 import Project2 from "../../images/projects/synthesis.png";
 import Project3 from "../../images/projects/travellian.png";
 import Project4 from "../../images/projects/wtwr.png";
+import Project5 from "../../images/projects/community.png";
 const Gallery = () => {
   const Images = [
     {
@@ -26,6 +27,11 @@ const Gallery = () => {
       image: Project4,
       title: "What to wear",
       link: "https://github.com/rezamohdev/se_project_react",
+    },
+    {
+      image: Project5,
+      title: "Coomunity Webiste",
+      link: "https://community-for-afg.netlify.app/",
     },
   ];
   return (
