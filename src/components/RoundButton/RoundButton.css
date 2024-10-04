@@ -3,10 +3,10 @@
   src: url(../../../public/assets/Work_Sans/static/WorkSans-Regular.ttf);
 }
 .rounded-button {
-  background-color: dodgerblue;
+  background-color: black;
   padding: 7px 33px;
   border-radius: 50px;
-  background: #07f;
+  background: black;
   border: none;
   color: #fff;
   font-family: "Work Sans", sans-serif;
@@ -16,14 +16,14 @@
   line-height: normal;
   cursor: pointer;
   transition: 230ms ease-out;
-  border: 1px solid #07f;
+  border: 1px solid black;
 }
 .rounded-button:hover {
   box-shadow: 1px 4px 12px 0px #0000002b;
 }
 
 .button_type_light {
-  border: 1px solid #07f;
+  border: 1px solid black;
   background: #fff;
-  color: #07f;
+  color: black;
 }
