@@ -3,7 +3,7 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
@@ -134,10 +134,6 @@ const Header = () => {
         </div>
       ) : (
         <header className="header">
-          <span className="header__logo">
-            <span style={{ fontSize: 25 }}>💻</span>
-            <b>Reza Mohammadi</b>
-          </span>
           <ul className="header__links">
             <li>
               <Link
@@ -196,8 +192,13 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <a href="mailto:mailto:rezamohamadi463@yahoo.com">
-            <RoundButton>Let's chat</RoundButton>
+          <a
+            className="let's chat"
+            href="mailto:mailto:rezamohamadi463@yahoo.com"
+          >
+            {/* <RoundButton> */}
+            <FontAwesomeIcon icon={faMessage} />
+            {/* </RoundButton> */}
           </a>
         </header>
       )}

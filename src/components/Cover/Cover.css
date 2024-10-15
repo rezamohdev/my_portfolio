@@ -4,6 +4,7 @@
   gap: 100px;
   padding: 100px 81px;
   justify-content: center;
+  background-image: "../images/space.jpg";
 }
 .cover__info {
   display: flex;
