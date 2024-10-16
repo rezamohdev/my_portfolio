@@ -5,13 +5,6 @@ import Skills from "../Skills/Skills";
 import "./Main.css";
 
 const Main = () => {
-  return (
-    <>
-      <Cover />
-      <Skills />
-      <Gallery />
-      <Footer />
-    </>
-  );
+  return <></>;
 };
 export default Main;

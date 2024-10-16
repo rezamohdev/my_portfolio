@@ -5,18 +5,16 @@ import Cover from "../Cover/Cover";
 import Skills from "../Skills/Skills";
 import Gallery from "../Gallery/Gallery";
 import Footer from "../Footer/Footer";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route path="/cover" element={<Cover />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/footer" element={<Footer />} />
-      </Routes>
+      <Cover />
+      <Skills />
+      <Gallery />
+      <Footer />
       <Main />
     </div>
   );

@@ -1,3 +1,7 @@
+.App {
+  background-color: transparent;
+  background: url(../../images/space.jpg);
+}
 @font-face {
   font-family: "Work Sans";
   src: url(../../../public/assets/Work_Sans/static/WorkSans-Regular.ttf);

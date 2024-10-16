@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 35px 65px;
+  background-color: transparent;
 }
 .header__links {
   display: flex;
