@@ -11,10 +11,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Cover />
-      <Skills />
-      <Gallery />
-      <Footer />
       <Main />
     </div>
   );

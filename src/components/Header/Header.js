@@ -3,8 +3,9 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMessage, faX } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   // const [showNavbar, isShowNavbar] = useState(false);
@@ -146,49 +147,7 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#skills"
-              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="gallery"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#gallery"
-              >
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="footer"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#footer"
-              >
-                Contact me
+                <FontAwesomeIcon icon={faXTwitter} color="#fff" />
               </Link>
             </li>
           </ul>
