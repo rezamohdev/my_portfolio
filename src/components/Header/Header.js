@@ -5,7 +5,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faMessage, faX } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   // const [showNavbar, isShowNavbar] = useState(false);
@@ -147,7 +147,7 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                <FontAwesomeIcon icon={faXTwitter} color="#fff" />
+                <FontAwesomeIcon icon={faTwitter} />
               </Link>
             </li>
           </ul>
