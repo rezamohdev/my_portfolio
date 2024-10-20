@@ -201,14 +201,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <a
-            className="let's chat"
-            href="mailto:mailto:rezamohamadi463@yahoo.com"
-          >
-            {/* <RoundButton> */}
-            <FontAwesomeIcon icon={faMessage} />
-            {/* </RoundButton> */}
-          </a>
         </header>
       )}
 

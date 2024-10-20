@@ -1,6 +1,5 @@
 .App {
-  background-color: transparent;
-  background: url(../../images/space.jpg);
+  background-color: white;
 }
 @font-face {
   font-family: "Work Sans";
