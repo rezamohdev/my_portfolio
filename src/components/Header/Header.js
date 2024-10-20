@@ -3,9 +3,17 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMessage, faX } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faEnvelope,
+  faMessage,
+} from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
-import { faTwitter, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   // const [showNavbar, isShowNavbar] = useState(false);
@@ -148,6 +156,48 @@ const Header = () => {
                 href="#cover"
               >
                 <FontAwesomeIcon icon={faTwitter} />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="cover"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+                className="header__link"
+                href="#cover"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="cover"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+                className="header__link"
+                href="#cover"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="cover"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+                className="header__link"
+                href="#cover"
+              >
+                <FontAwesomeIcon icon={faGithub} />
               </Link>
             </li>
           </ul>
