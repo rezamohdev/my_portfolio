@@ -155,7 +155,10 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
@@ -169,7 +172,10 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
@@ -183,7 +189,10 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
@@ -197,7 +206,10 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
           </ul>
