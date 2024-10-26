@@ -3,11 +3,7 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faEnvelope,
-  faMessage,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
 import {
   faGithub,
@@ -213,6 +209,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <img src="" />
         </header>
       )}
 
