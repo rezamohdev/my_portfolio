@@ -2,9 +2,7 @@
   width: 90%;
   padding: 90px;
   display: grid;
-  column-gap: 50px;
-  row-gap: 50px;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: 100px 100px 100px;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  grid-template-rows: repeat(100px, auto);
 }
