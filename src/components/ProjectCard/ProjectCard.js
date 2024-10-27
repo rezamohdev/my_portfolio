@@ -8,7 +8,7 @@ const ProjectCard = ({ title, desc, iconName }) => {
   return (
     <div className="card">
       <div className="card__header">
-        <h1>{title}</h1>
+        <h5>{title}</h5>
         <FontAwesomeIcon icon={iconName} size="23" />
       </div>
       <div className="card__body"></div>

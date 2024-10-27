@@ -25,16 +25,19 @@ const cardData = [
     title: "Synthesis workshop",
     desc: "lorem ipsum dolor",
     iconName: "flask",
+    url: "https://synthesis-workshop.com/",
   },
   {
     title: "What to wear",
     desc: "lorem ipsum dolor",
     iconName: "shirt",
+    url: "https://github.com/rezamohdev/se_project_react",
   },
   {
     title: "About the US. photo gallery",
     desc: "lorem ipsum dolor",
     iconName: "images",
+    url: "https://rezamohdev.github.io/se_project_aroundtheus/",
   },
 ];
 const Main = () => {
