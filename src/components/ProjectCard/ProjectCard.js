@@ -5,7 +5,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-const ProjectCard = ({ title, desc, iconName }) => {
+const ProjectCard = ({ title, desc, iconPrefix, iconName }) => {
   const [isCardInfoHidden, setIsCardInfoHidden] = useState(false);
   return (
     <div className="card">
@@ -17,7 +17,7 @@ const ProjectCard = ({ title, desc, iconName }) => {
       )}
       {/* <div className="card__body"> */}
       <div className="card__circle">
-        <FontAwesomeIcon icon={iconName} size="23" />
+        <FontAwesomeIcon icon={[iconPrefix, iconName]} size="23" />
       </div>
       {/* </div> */}
 
