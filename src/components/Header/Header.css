@@ -5,12 +5,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  background-color: transparent;
   border-radius: 50px;
   border: 1px solid grey;
   position: sticky;
-  margin: 20px auto;
+  margin: 0 auto;
   height: 60px;
 }
 .header__links {
@@ -24,7 +22,7 @@
 .header__link {
   position: relative;
   cursor: pointer;
-  color: grey;
+  color: rgba(191 191 191);
   text-align: center;
   font-size: 20px;
   transition: ease 300ms font-size;
@@ -32,21 +30,19 @@
   height: 100px;
 }
 .header__link_icon {
-  font-size: inherit;
+  font-size: 10px !important;
   width: 40px;
   height: 40px;
-  transition: ease 300ms font-size;
 }
 .header__link:hover > .header__link_icon {
   font-size: 45px;
-  color: black;
+  color: #fff;
 }
 .header__link::after {
   position: absolute;
   content: "";
   right: 0;
   bottom: 0px;
-  background-color: #fff;
   border-radius: 4px;
   overflow: hidden;
 }

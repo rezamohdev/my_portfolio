@@ -139,6 +139,7 @@ const Header = () => {
         </div>
       ) : (
         <header className="header">
+          <span>Reza Mohammadi</span>
           <ul className="header__links">
             <li>
               <Link
@@ -209,7 +210,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <img src="" />
         </header>
       )}
 
