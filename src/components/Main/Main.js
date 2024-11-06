@@ -1,9 +1,11 @@
 import ProjectCard from "../ProjectCard/ProjectCard";
+import Preview2 from "../../images/MyPhoto.png";
 import "./Main.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(fas, far, fab);
 
@@ -52,7 +54,17 @@ const cardData = [
 const Main = () => {
   return (
     <div className="main">
-      {cardData.map((card) => {
+      <div className="main__avatar avatar">
+        <img src={Preview2} alt="avatarpreview" className="avatar__photo" />
+        {/* <div> */}
+        <FontAwesomeIcon
+          icon={["fab", "react"]}
+          className="avatar__circle"
+          size="sm"
+        />
+        {/* </div> */}
+      </div>
+      {/* {cardData.map((card) => {
         return (
           <ProjectCard
             title={card.title}
@@ -62,7 +74,7 @@ const Main = () => {
             backgroundColor={card.bg}
           />
         );
-      })}
+      })}*/}
     </div>
   );
 };
