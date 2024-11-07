@@ -64,7 +64,7 @@ const Main = () => {
         />
         {/* </div> */}
       </div>
-      {/* {cardData.map((card) => {
+      {cardData.map((card) => {
         return (
           <ProjectCard
             title={card.title}
@@ -74,7 +74,7 @@ const Main = () => {
             backgroundColor={card.bg}
           />
         );
-      })}*/}
+      })}
     </div>
   );
 };
