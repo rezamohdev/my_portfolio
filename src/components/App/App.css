@@ -1,3 +1,8 @@
+.App {
+  background-color: #000;
+  color-scheme: dark;
+  padding: 50px 90px;
+}
 @font-face {
   font-family: "Work Sans";
   src: url(../../../public/assets/Work_Sans/static/WorkSans-Regular.ttf);

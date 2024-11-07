@@ -3,8 +3,13 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   // const [showNavbar, isShowNavbar] = useState(false);
@@ -134,10 +139,7 @@ const Header = () => {
         </div>
       ) : (
         <header className="header">
-          <span className="header__logo">
-            <span style={{ fontSize: 25 }}>💻</span>
-            <b>Reza Mohammadi</b>
-          </span>
+          <span>Reza Mohammadi</span>
           <ul className="header__links">
             <li>
               <Link
@@ -150,55 +152,64 @@ const Header = () => {
                 className="header__link"
                 href="#cover"
               >
-                Home
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                to="skills"
+                to="cover"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={300}
                 className="header__link"
-                href="#skills"
+                href="#cover"
               >
-                About Me
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                to="gallery"
+                to="cover"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={300}
                 className="header__link"
-                href="#gallery"
+                href="#cover"
               >
-                Gallery
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
             <li>
               <Link
                 activeClass="active"
-                to="footer"
+                to="cover"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={300}
                 className="header__link"
-                href="#footer"
+                href="#cover"
               >
-                Contact me
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className="header__link_icon"
+                />
               </Link>
             </li>
           </ul>
-          <a href="mailto:mailto:rezamohamadi463@yahoo.com">
-            <RoundButton>Let's chat</RoundButton>
-          </a>
         </header>
       )}
 
