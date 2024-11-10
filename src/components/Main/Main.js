@@ -6,6 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Spline from "@splinetool/react-spline";
 
 library.add(fas, far, fab);
 
@@ -55,7 +56,12 @@ const Main = () => {
   return (
     <div className="main">
       <div className="main__avatar avatar">
-        <img src={Preview2} alt="avatarpreview" className="avatar__photo" />
+        {/* <img src={Preview2} alt="avatarpreview" className="avatar__photo" /> */}
+        <Spline
+          scene="https://prod.spline.design/aq2yi32221OjBqw4/scene.splinecode"
+          className="threedmodel"
+        />
+
         {/* <div> */}
         <FontAwesomeIcon
           icon={["fab", "react"]}
@@ -64,7 +70,7 @@ const Main = () => {
         />
         {/* </div> */}
       </div>
-      {cardData.map((card) => {
+      {/* {cardData.map((card) => {
         return (
           <ProjectCard
             title={card.title}
@@ -74,7 +80,7 @@ const Main = () => {
             backgroundColor={card.bg}
           />
         );
-      })}
+      })} */}
     </div>
   );
 };
