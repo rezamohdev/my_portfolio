@@ -58,7 +58,7 @@ const Header = () => {
         <div className="nav">
           <div className="nav__top">
             <span className="header__logo">
-              <span style={{ fontSize: 25 }}>💻 </span>
+              <span style={{ fontSize: 15 }}>💻 </span>
               <b> Reza Mohammadi</b>
             </span>
             <button className="nav__menu-button" onClick={handleMenuClick}>
@@ -149,12 +149,12 @@ const Header = () => {
                 smooth={true}
                 offset={0}
                 duration={300}
-                className="header__link"
                 href="#cover"
               >
                 <FontAwesomeIcon
                   icon={faTwitter}
-                  className="header__link_icon"
+                  // className="header__link_icon"
+                    fontSize={30}
                 />
               </Link>
             </li>
@@ -171,7 +171,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="header__link_icon"
+                  // className="header__link_icon"
                 />
               </Link>
             </li>
@@ -188,7 +188,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="header__link_icon"
+                  // className="header__link_icon"
                 />
               </Link>
             </li>
@@ -205,7 +205,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="header__link_icon"
+                  // className="header__link_icon"
                 />
               </Link>
             </li>

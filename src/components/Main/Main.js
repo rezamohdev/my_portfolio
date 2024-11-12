@@ -1,12 +1,13 @@
 import ProjectCard from "../ProjectCard/ProjectCard";
-import Preview2 from "../../images/MyPhoto.png";
+import avatar from "../../images/avatar.jpeg";
 import "./Main.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Spline from "@splinetool/react-spline";
+import { motion } from "framer-motion";
+
 
 library.add(fas, far, fab);
 
@@ -52,35 +53,54 @@ const cardData = [
     bg: "#ff4e33",
   },
 ];
+
 const Main = () => {
+
+
+
   return (
     <div className="main">
-      <div className="main__avatar avatar">
-        {/* <img src={Preview2} alt="avatarpreview" className="avatar__photo" /> */}
-        <Spline
-          scene="https://prod.spline.design/aq2yi32221OjBqw4/scene.splinecode"
-          className="threedmodel"
-        />
+      <div className="main__top">
+        <div className="main__avatar avatar">
+          <img src={avatar} alt="avatarpreview" className="avatar__photo" />
 
-        {/* <div> */}
-        <FontAwesomeIcon
-          icon={["fab", "react"]}
-          className="avatar__circle"
-          size="sm"
-        />
-        {/* </div> */}
-      </div>
-      {/* {cardData.map((card) => {
-        return (
-          <ProjectCard
-            title={card.title}
-            desc={card.desc}
-            iconPrefix={card.iconPrefix}
-            iconName={card.iconName}
-            backgroundColor={card.bg}
+          {/* <div> */}
+          <FontAwesomeIcon
+            icon={["fab", "react"]}
+            className="avatar__circle"
+            size="sm"
           />
-        );
-      })} */}
+          {/* </div> */}
+        </div>
+        <div className="main__info">
+          <div className="main__cover"></div>
+
+              <motion.h2
+                  style={{overflow:'hidden',  whiteSpace:"nowrap", color:"#fff", fontSize:"95px"}}
+                  initial={{width:0}}
+                  animate={{ width:"100%" }}
+                  transition={{
+                    duration: 2,
+                    ease:"easeInOut"
+                  }}
+              >
+Reza Mohammadi <br/> Front end developer
+              </motion.h2>
+        </div>
+      </div>
+      <div className="main__cards">
+        {cardData.map((card) => {
+          return (
+            <ProjectCard
+              title={card.title}
+              desc={card.desc}
+              iconPrefix={card.iconPrefix}
+              iconName={card.iconName}
+              backgroundColor={card.bg}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
