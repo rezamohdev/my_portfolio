@@ -3,12 +3,13 @@ import { Link, Events, scrollSpy, animateScroll as scroll } from "react-scroll";
 import RoundButton from "../RoundButton/RoundButton";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
 import {
+  faGit,
   faGithub,
   faLinkedin,
-  faTwitter,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
@@ -139,77 +140,12 @@ const Header = () => {
         </div>
       ) : (
         <header className="header">
-          <span>Reza Mohammadi</span>
-          <ul className="header__links">
-            <li>
-              <Link
-                activeClass="active"
-                to="cover"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                href="#cover"
-              >
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  // className="header__link_icon"
-                    fontSize={30}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="cover"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#cover"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  // className="header__link_icon"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="cover"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#cover"
-              >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  // className="header__link_icon"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="cover"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                className="header__link"
-                href="#cover"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  // className="header__link_icon"
-                />
-              </Link>
-            </li>
-          </ul>
+          <span className="header__title">Reza Mohammadi</span>
+      <div className="header__links">
+        <FontAwesomeIcon icon={faXTwitter} fontSize={20} className="header__link" />
+        <FontAwesomeIcon icon={faLinkedin} fontSize={20} className="header__link"/>
+        <FontAwesomeIcon icon={faGithub} fontSize={20} className="header__link" />
+      </div>
         </header>
       )}
 

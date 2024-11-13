@@ -97,6 +97,7 @@ Reza Mohammadi <br/> Front end developer
               iconPrefix={card.iconPrefix}
               iconName={card.iconName}
               backgroundColor={card.bg}
+              key={card.id}
             />
           );
         })}
