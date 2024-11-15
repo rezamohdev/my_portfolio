@@ -6,50 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="622bd11f-0b1c-479d-8579-5464e506b7b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardSlider/CardSlider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardSlider/CardSlider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cover/Cover.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cover/Cover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GalleryCard/GalleryCard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GalleryCard/GalleryCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProgressBar/ProgressBar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProgressBar/ProgressBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard/ProjectCard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectCard/ProjectCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoundButton/RoundButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RoundButton/RoundButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Skills/Skills.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Skills/Skills.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SlideButton/SlideButton.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SlideButton/SlideButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TabGroup/TabGroup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TabGroup/TabGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/MyPhoto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/avatar.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mycv/RezaResume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/aroundus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/community.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/preview2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/synthesis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/travellian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/projects/wtwr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/space.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg/HTML5_logo_and_wordmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg/React-icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg/Tailwind_CSS_Logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg/Unofficial_JavaScript_logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/List.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +70,8 @@
       <workItem from="1731284347304" duration="138000" />
       <workItem from="1731375797455" duration="2684000" />
       <workItem from="1731458390267" duration="2316000" />
-      <workItem from="1731537760854" duration="4611000" />
+      <workItem from="1731537760854" duration="5429000" />
+      <workItem from="1731631236421" duration="995000" />
     </task>
     <servers />
   </component>
